@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We'll Be Back Soon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 30px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+        .loader {
+            margin: 20px auto;
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <!-- Auto Refresh (optional) -->
+    <!-- <meta http-equiv="refresh" content="30"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>We'll Be Back Soon</h1>
+        <div class="loader"></div>
+        <p>We’re currently performing some maintenance. Please check back later.</p>
+        <p>Thank you for your patience!</p>
+    </div>
+</body>
+</html>
