@@ -1,9 +1,10 @@
-FROM alpine:latest
-RUN apk add --no-cache nginx
+FROM nginx:alpine
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copy the index.html file to the Nginx default root directory
 COPY index.html /usr/share/nginx/html/
 
+# Expose port 80
 EXPOSE 80
 
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
