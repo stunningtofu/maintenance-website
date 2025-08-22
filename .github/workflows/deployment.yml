@@ -70,14 +70,14 @@ jobs:
           image-ref: ${{ env.IMAGE_NAME }}
           ignore-unfixed: true
           format: json
-          output: trivy-results.sarif
+          output: trivy-results.json
           severity: CRITICAL,HIGH,MEDIUM
           exit-code: 1
 
       - name: Upload Trivy Scan Results to GitHub Security
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: 'trivy-results.sarif'
+          sarif_file: 'trivy-results.json'
           category: 'container-image-scan'
 
       - name: Upload Trivy Report as Artifact
