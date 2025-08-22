@@ -69,7 +69,7 @@ jobs:
         with:
           image-ref: ${{ env.IMAGE_NAME }}
           ignore-unfixed: true
-          format: 'table'
+          format: json
           output: trivy-results.sarif
           severity: CRITICAL,HIGH,MEDIUM
           exit-code: 1
